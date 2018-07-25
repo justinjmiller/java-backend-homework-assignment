@@ -5,22 +5,26 @@ import java.time.ZonedDateTime;
 /**
  * An entity will always have an id and a creation date.
  */
-public abstract class Entity<T> {
+public abstract class Entity<T>
+{
 
-	private final T id;
+    private final T id;
 
-	private ZonedDateTime createdDate;
+    private ZonedDateTime createdDate;
 
-	Entity(T id, ZonedDateTime createdDate) {
-		this.id = id;
-		this.createdDate = createdDate;
-	}
+    Entity(T id, ZonedDateTime createdDate)
+    {
+        this.id = id;
+        this.createdDate = createdDate;
+    }
 
-	public T getId() {
-		return id;
-	}
+    public T getId()
+    {
+        return id;
+    }
 
-	public ZonedDateTime getCreatedDate() {
-		return createdDate;
-	}
+    public ZonedDateTime getCreatedDate()
+    {
+        return createdDate;
+    }
 }
